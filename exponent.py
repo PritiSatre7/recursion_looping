@@ -22,4 +22,4 @@ def loop_pow(num:int,pow:int)->int:
     return retval
 
 if __name__ == "__main__":
-    print(power(2,3))
+    print(power(4,3))
