@@ -23,4 +23,6 @@ def factorial(num:int)->int:
     return retval
 
 if __name__ == "__main__":
+    logger.info("Program started")
     print(factorial(5))
+    logger.info("Program finished")
