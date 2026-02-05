@@ -13,3 +13,5 @@ def repeat_str(text:str, num:int)->str:
         num = num-1
     return retval
 
+if __name__ == "__main__":
+    print(repeat_str("Sam" , 2))
