@@ -12,5 +12,7 @@ def power(num:int ,pow:int)->int:
     elif pow == 1:
         return num
     else:
-        return num*pow (num,pow-1)
-    
+        return num * power(num, pow-1)
+
+if __name__ == "__main__":
+    print(power(2,3))
