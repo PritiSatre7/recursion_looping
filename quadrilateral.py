@@ -6,12 +6,26 @@ Function for Quadrilateral Progressions
 Return condition is True or False
 """
 
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 def is_quad(a:int, b:int, c:int, d:int )->bool:
-    if a+b+c+<=d:
+    if a+b+c<=d:
+        logger.warning("Invalid quadrilateral")
         return False
     elif b+c+d<=a:
+        logger.warning("Invalid quadrilateral")
         return False
     elif c+d+a<=b:
+        logger.warning("Invalid quadrilateral")
         return False
     else:
+        logger.info("Valid quadrilateral")
         return True
+
+if __name__=="__main__":
+    logger.info("Program started")
+    print(is_quad(3,4,5, 6))
+    logger.info("Program ended")
