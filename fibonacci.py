@@ -1,5 +1,8 @@
+"""
+Fibonacci Series
 
-
+Function for Fibonacci series
+"""
 
 def fibonacci(nterm:int) -> int:
     if nterm <= 1:
