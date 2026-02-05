@@ -13,3 +13,5 @@ def factorial(num:int)->int:
         num=num-1
     return retval
 
+if __name__ == "__main__":
+    print(factorial(5))
