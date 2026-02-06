@@ -19,6 +19,14 @@ def is_quad(a, b, c, d) -> bool:
 
 
 """
+Parallelogram
+Function for Parallelogram
+"""
+
+
+
+
+"""
 Exponential Progressions
 
 Function for Exponential Progressions
