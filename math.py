@@ -1,3 +1,19 @@
+
+
+
+def is_quad(a, b, c, d) -> bool:
+    if a + b + c <= d:
+        return False
+    elif a + b + d <= c:
+        return False
+    elif a + c + d <= b:
+        return False
+    elif b + c + d <= a:
+        return False
+    else:
+        return True
+
+
 """
 Exponential Progressions
 
@@ -33,4 +49,5 @@ def fibonacci(nterm:int) -> int:
 
 if __name__ == '__main__':
     print(fibonacci(5))
-    print(exponential(2, 3))
+    print(exponential(3, 4))
+    print(is_quad(2, 3, 5, 6))
