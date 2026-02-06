@@ -5,6 +5,8 @@
 Function for Recurrence Atrangi
 It will return a single integer value for given.
 """
+import logging
+logging.basicConfig(level=logging.INFO)
 
 def atrangi(n: int) -> int:
     fact = 1
