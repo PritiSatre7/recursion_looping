@@ -21,6 +21,7 @@ def build_atrangi(nterm: int) -> float:
         i += 1
     return total
 
-
+if __name__ == "__main__":
+    print(build_atrangi(5))
 
 
