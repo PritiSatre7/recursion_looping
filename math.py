@@ -23,6 +23,15 @@ Parallelogram
 Function for Parallelogram
 """
 
+def is_parallelogram(a, b, c, d) -> bool:
+    if is_quad(a, b, c, d) == False:
+        return False
+    if a != c:
+        return False
+    elif b!= d:
+        return False
+    else:
+        return True
 
 
 
@@ -63,3 +72,4 @@ if __name__ == '__main__':
     print(fibonacci(5))
     print(exponential(3, 4))
     print(is_quad(2, 3, 5, 6))
+    print(is_parallelogram(3, 5, 6, 7))
