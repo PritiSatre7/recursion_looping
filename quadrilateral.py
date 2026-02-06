@@ -14,21 +14,22 @@ logger = logging.getLogger(__name__)
 def is_quad(a:int, b:int, c:int, d:int )->bool:
     if a+b+c<=d:
         logger.debug("fourth side is <= the sum of first three")
-        logger.warning("Invalid quadrilateral")
+        logger.info("Invalid quadrilateral")
         return False
     elif b+c+d<=a:
         logger.debug("fourth side is <= the sum of first three")
-        logger.warning("Invalid quadrilateral")
+        logger.info("Invalid quadrilateral")
         return False
     elif c+d+a<=b:
         logger.debug("fourth side is <= the sum of first three")
-        logger.warning("Invalid quadrilateral")
+        logger.info("Invalid quadrilateral")
         return False
     else:
         logger.info("Valid quadrilateral")
         return True
 
 if __name__=="__main__":
-    logger.info("Program started")
-    print(is_quad(3,4,5, 6))
-    logger.info("Program ended")
+    if not is_quad(1, 2, 3, 4):
+        logger.warning("Invalid quadrilateral")
+    else:
+        logger.info("Valid quadrilateral")
