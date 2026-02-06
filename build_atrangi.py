@@ -13,5 +13,14 @@ def atrangi(n: int) -> int:
         n -= 1
     return fact
 
+def build_atrangi(nterm: int) -> float:
+    total = 0
+    i = 1
+    while i <= nterm:
+        total = total + (i / atrangi(i))
+        i += 1
+    return total
+
+
 
 
