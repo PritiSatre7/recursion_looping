@@ -2,7 +2,7 @@
 # coding=utf-8
 
 """
-Function for Exponentional Progressions
+Function for Exponential Progressions
 It will return the retval of num and power
 """
 
