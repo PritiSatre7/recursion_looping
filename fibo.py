@@ -6,6 +6,12 @@ logger = logging.getLogger(__name__)
 
 
 def atarangi(nterm: int) -> int:
+    """
+    get value of atarangi series for a given term
+
+    :param nterm:
+    :return:
+    """
     logger.debug("Function is called")
     if nterm == 0:
         logger.info("Base case")
