@@ -1,4 +1,8 @@
+"""
+Quadrilateral
 
+Function for Quadrilateral
+"""
 
 
 def is_quad(a, b, c, d) -> bool:
