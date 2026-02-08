@@ -15,4 +15,8 @@ def perfect_square(num:int) -> int:
     return "." * i
 
 if __name__ == "__main__":
-    print(perfect_square(5))
+    print(perfect_square(0))
+    print(perfect_square(1))
+    print(perfect_square(4))
+    print(perfect_square(9))
+    print(perfect_square(16))
