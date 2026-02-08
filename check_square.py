@@ -67,17 +67,17 @@ def backfall(n: int) -> str:
     return result
 
 if __name__ == "__main__":
-    print(backfall(0))
-    print(backfall(1))
-    print(backfall(4))
-    print(backfall(9))
-    print(backfall(16))
-
     print(perfect_square(0))
     print(perfect_square(1))
     print(perfect_square(4))
     print(perfect_square(9))
     print(perfect_square(16))
     print(perfect_square(-16))
+
+    print(backfall(0))
+    print(backfall(1))
+    print(backfall(4))
+    print(backfall(9))
+    print(backfall(16))
 
 
