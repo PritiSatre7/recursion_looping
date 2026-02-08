@@ -1,3 +1,11 @@
+"""
+Perfect square
+
+Function checks if the input is a perfect square, if not it falls back to the previous perfect square.
+
+"""
+
+
 def perfect_square(num:int) -> int:
     i = 0
     while i * i <= num:
