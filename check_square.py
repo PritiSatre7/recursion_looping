@@ -7,3 +7,4 @@ def perfect_square(num:int) -> int:
     return "." * i
 
 if __name__ == "__main__":
+    print(perfect_square(5))
