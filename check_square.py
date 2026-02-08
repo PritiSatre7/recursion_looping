@@ -10,7 +10,7 @@ Function checks if the input is a perfect square, if not it falls back to the pr
 
 import logging
 logging.basicConfig(level=logging.DEBUG)
-logger = logging.getLogger(_name_)
+logger = logging.getLogger(__name__)
 
 def perfect_square(num:int) -> int:
     logger.info("function started")
