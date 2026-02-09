@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 def build_atrangi(nterm: int) -> float:
     """
     This function calculates the series:
-    1/1! + 2/2! + 3/3! + ... + n/n!
+    1/atrangi(1) + 2/atrangi(2) + 3/atrangi(3) + ...
     """
     logger.info("Building atrangi series")
     total = 0
