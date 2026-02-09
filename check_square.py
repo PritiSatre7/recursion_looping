@@ -20,7 +20,6 @@ def perfect_square_iter(ch: str, n: int) -> str:
 
     root = math.isqrt(n)  #integer square root
     logger.debug(f"integer square root calculated: {root}")
-
     return ch * root
 
 
@@ -48,7 +47,4 @@ def calculate_y_series(nterm: int) -> str:
     return retval
 
 if __name__ == "__main__":
-    print(perfect_square_iter("x", 16))
-
-    print(calculate_y_series(9))
-
+    print(perfect_square_iter("(", 16))
