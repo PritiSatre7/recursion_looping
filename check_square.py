@@ -28,26 +28,6 @@ def perfect_square(num:int) -> int:
     return "." * i
 
 
-
-"""
-Function for Square Progression
-The function generates a string consisting only of opening parentheses '('.
-"""
-
-#!/usr/bin/env python3
-# coding=utf-8
-
-"""
-Function for Square Progression
-The function generates a string consisting only of opening parentheses '('.
-"""
-
-import logging
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
-
-
 def backfall(n: int) -> str:
     """
     Returns a string of '(' characters based on square root logic.
