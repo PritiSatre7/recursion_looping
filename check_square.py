@@ -20,12 +20,7 @@ def perfect_square_iter(ch: str, n: int) -> str:
 
     root = math.isqrt(n)  #integer square root
     logger.debug(f"integer square root calculated: {root}")
-
     return ch * root
 
 if __name__ == "__main__":
-    print(perfect_square_iter(".", 0))
-    print(perfect_square_iter(".", 1))
-    print(perfect_square_iter("(", 4))
-    print(perfect_square_iter("(", 9))
-    print(perfect_square_iter("x", 16))
+    print(perfect_square_iter("(", 16))
