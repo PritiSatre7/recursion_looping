@@ -26,14 +26,12 @@ def perfect_square_iter(ch: str, n: int) -> str:
 
 def calculate_y_series(nterm: int) -> str:
     """
-    This function generates the series y(n) using while loop.
+    This function generates the series using while loop.
     it takes the number of terms as input and returns the series as a string.
 
-    Takes as input:
+    parameters:
     nterms:number of terms to generate series.
-
-    Produce as output:
-    str:generated y(n) series
+    returns: A string representing generated series.
 
     """
     retval = ""
