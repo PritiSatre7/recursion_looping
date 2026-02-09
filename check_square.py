@@ -3,12 +3,11 @@
 
 """
 Perfect square
-
-Function checks if the input is a perfect square, if not it falls back to the previous perfect square.
-
+Function will create a strings and a series based on perfect squares and it will fall back to the previous square when needed.
 """
 
 import logging
+import math
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
@@ -52,7 +51,7 @@ if __name__ == "__main__":
     print(perfect_square(4))
     print(perfect_square(9))
     print(perfect_square(16))
-    print(perfect_square(-16))
+    print(perfect_square(16))
 
     print(backfall(0))
     print(backfall(1))
