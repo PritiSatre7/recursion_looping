@@ -29,7 +29,7 @@ def calculate_y_series(nterm: int) -> str:
     This function generates the series using while loop.
     it takes the number of terms as input and returns the series as a string.
 
-    parameters:
+
     :param nterm:number of terms to generate series.
     :returns: A string representing generated series.
 
