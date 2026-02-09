@@ -66,6 +66,8 @@ def backfall(n: int) -> str:
 
     return result
 
+
+
 if __name__ == "__main__":
     print(perfect_square(0))
     print(perfect_square(1))
