@@ -22,5 +22,29 @@ def perfect_square_iter(ch: str, n: int) -> str:
     logger.debug(f"integer square root calculated: {root}")
     return ch * root
 
+
+def calculate_y_series(nterm: int) -> str:
+    """
+    This function generates the series using while loop.
+    it takes the number of terms as input and returns the series as a string.
+
+
+    :param nterm:number of terms to generate series.
+    :returns: A string representing generated series.
+
+    """
+    retval = ""
+    i = 0
+    while i <= nterm:
+        if i == 0:
+            retval += perfect_square_iter("", i) + perfect_square_iter("", i)
+        else:
+            retval += "-" * i
+            retval += perfect_square_iter(".", i) + perfect_square_iter("(", i)
+
+        i = i + 1
+
+    return retval
+
 if __name__ == "__main__":
     print(perfect_square_iter("(", 16))
