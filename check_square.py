@@ -48,10 +48,6 @@ def calculate_y_series(nterm: int) -> str:
     return retval
 
 if __name__ == "__main__":
-    print(perfect_square_iter(".", 0))
-    print(perfect_square_iter(".", 1))
-    print(perfect_square_iter("(", 4))
-    print(perfect_square_iter("(", 9))
     print(perfect_square_iter("x", 16))
 
     print(calculate_y_series(9))
