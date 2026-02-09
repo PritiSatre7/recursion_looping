@@ -23,6 +23,7 @@ def perfect_square_iter(ch: str, n: int) -> str:
 
     return ch * root
 
+
 def calculate_y_series(nterm: int) -> str:
     retval = ""
     i = 0
