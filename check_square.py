@@ -30,8 +30,8 @@ def calculate_y_series(nterm: int) -> str:
     it takes the number of terms as input and returns the series as a string.
 
     parameters:
-    nterms:number of terms to generate series.
-    returns: A string representing generated series.
+    :param nterm:number of terms to generate series.
+    :returns: A string representing generated series.
 
     """
     retval = ""
