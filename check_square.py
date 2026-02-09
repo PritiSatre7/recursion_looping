@@ -18,7 +18,7 @@ def perfect_square_iter(ch: str, n: int) -> str:
         logger.debug("n is less than or equal to 0, returning empty string")
         return ""
 
-    root = math.isqrt(n)
+    root = math.isqrt(n)  #integer square root
     logger.debug(f"integer square root calculated: {root}")
 
     return ch * root
