@@ -29,8 +29,11 @@ def calculate_y_series(nterm: int) -> str:
     This function generates the series y(n) using while loop.
     it takes the number of terms as input and returns the series as a string.
 
-    parameters:
+    Takes as input:
     nterms:number of terms to generate series.
+
+    Produce as output:
+    str:generated y(n) series
 
     """
     retval = ""
