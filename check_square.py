@@ -23,6 +23,20 @@ def perfect_square_iter(ch: str, n: int) -> str:
 
     return ch * root
 
+def calculate_y_series(nterm: int) -> str:
+    retval = ""
+    i = 0
+
+    while i <= nterm:
+        if i == 0:
+            retval += perfect_square_iter("", i) + perfect_square_iter("", i)
+        else:
+            retval += "-" * i
+            retval += perfect_square_iter(".", i) + perfect_square_iter("(", i)
+
+        i = i + 1
+
+    return retval
 
 if __name__ == "__main__":
     print(perfect_square_iter(".", 0))
@@ -31,4 +45,5 @@ if __name__ == "__main__":
     print(perfect_square_iter("(", 9))
     print(perfect_square_iter("x", 16))
 
+    print(calculate_y_series(9))
 
